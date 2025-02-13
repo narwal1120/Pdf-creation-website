@@ -1,0 +1,191 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e5f9db; /* Light WhatsApp-like green */
+  background-image: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png'); /* Darker diamond pattern */
+  background-repeat: repeat;
+  background-size: 180px 180px; /* Balanced size for clarity */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Menu Bar */
+.menu-bar {
+  width: 100%;
+  background: #128c7e;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Container */
+.container {
+  max-width: 700px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Title */
+.title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Drag & Drop Area */
+.dropzone {
+  border: 2px dashed #25d366;
+  padding: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.dropzone:hover,
+.dropzone-active {
+  background: #c1f0c1;
+  border-color: #128c7e;
+}
+
+/* Image Grid */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Image Box */
+.image-box {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-box:hover {
+  transform: scale(1.05);
+}
+
+.image-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Delete Button */
+.delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-box:hover .delete-btn {
+  opacity: 1;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Buttons */
+.button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease-in-out;
+}
+
+.convert-btn {
+  background: #25d366;
+  color: white;
+}
+
+.download-btn {
+  background: #128c7e;
+  color: white;
+}
+
+.convert-btn:hover {
+  background: #1eb853;
+}
+
+.download-btn:hover {
+  background: #0e6e62;
+}
+
+/* Clear Button */
+.clear-btn {
+  background: #ff5252;
+  color: white;
+}
+
+.clear-btn:hover {
+  background: #ff1744;
+}
+
+/* Password Section */
+.password-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.password-section label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.password-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #128c7e;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Loading Spinner */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff9800;
+  margin-top: 10px;
+}
