@@ -2,44 +2,45 @@
     "name": "image-to-pdf-converter",
     "version": "1.0.0",
     "private": true,
-    "homepage": "https://<username>.github.io/<repository-name>",
+    "homepage": "https://narwal1120.github.io/Pdf-creation-website",
     "dependencies": {
-        "gh-pages": "^5.0.0",
-        "pdf-lib": "^1.17.1",
-        "react": "^18.2.0",
-        "react-beautiful-dnd": "^13.1.1",
-        "react-dom": "^18.2.0",
-        "react-dropzone": "^14.3.5",
-        "react-scripts": "^3.0.1"
+      "gh-pages": "^5.0.0",
+      "pdf-lib": "^1.17.1",
+      "react": "^18.2.0",
+      "react-beautiful-dnd": "^13.1.1",
+      "react-dom": "^18.2.0",
+      "react-dropzone": "^14.3.5",
+      "react-scripts": "^3.0.1"
     },
     "scripts": {
-        "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+      "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
-        "extends": [
-            "react-app"
-        ]
+      "extends": [
+        "react-app"
+      ]
     },
     "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
     },
     "devDependencies": {
-        "autoprefixer": "^10.4.14",
-        "postcss": "^8.4.23",
-        "tailwindcss": "^3.3.2"
+      "autoprefixer": "^10.4.14",
+      "postcss": "^8.4.23",
+      "tailwindcss": "^3.3.2"
     }
-}
+  }
+  
